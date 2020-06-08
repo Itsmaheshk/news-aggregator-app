@@ -1,7 +1,6 @@
 @import "./reset.css";
 body{
-    background-color: black;
-}
+    background-color: black;}
 .site-title{
     font-size: 30px;
     text-align: center;
