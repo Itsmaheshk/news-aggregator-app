@@ -15,7 +15,7 @@
   xmlHttp.open("GET", theUrl, true); // true for asynchronous 
             xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlHttp.send(null);
-        }
+            }
  let nodeCreated = `
         <li class="article">
               <img class="article-img" src="IMG-20180709-WA0015.jpg" alt="image" style="width:100%">
@@ -23,13 +23,10 @@
               <p class="article-description">hxjhsgyghwyugyuvyux6fwxgfw</p>
               <span class="article-author" style="display: block;"> shaikh.a.a</span>
               <a class="article-link" href="google.com"> hhjh</a>
-          </li>
-
-        `;
+          </li> `;
 
         let output = "";
-
-        let makeSomeHTML = (response) => {
+let makeSomeHTML = (response) => {
             let obj = JSON.parse(response);
             let dataArr = obj["articles"];
               for (let i = 0; i < dataArr.length; i++) {
